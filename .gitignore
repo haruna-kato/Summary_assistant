@@ -1,0 +1,24 @@
+# assets
+*_assets/
+*asset/
+
+# media
+*.mp4
+*.wav
+
+# osp
+*.osp
+
+# build
+tmp_build/
+
+# logs
+*.log
+
+# history
+history*.txt
+my_shell_history.txt
+
+data/
+openshot-qt/core 
+openshot-qt/*.txt

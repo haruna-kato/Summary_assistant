@@ -1,0 +1,190 @@
+    1  conda init
+    2  source ~/.bashrc 
+    3  ls
+    4  ls -l
+    5  cd workspace/
+    6  cd Openshot/
+    7  conda create -n openshot python=3.8
+    8  apt list --installed | grep openshot
+    9  conda openshot
+   10  conda activate openshot
+   11  sudo add-apt-repository ppa:openshot.developers/libopenshot-daily
+   12  cat /etc/hosts
+   13  sudo vim /etc/hosts
+   14  sudo whoami
+   15  sudo apt install software-properties-common
+   16  sudo apt-get update
+   17  sudo apt install software-properties-common
+   18  sudo add-apt-repository ppa:openshot.developers/libopenshot-daily
+   19  sudo apt-get install openshot-qt                         cmake                         libx11-dev                         libasound2-dev                         libavcodec-dev                         libavdevice-dev                         libavfilter-dev                         libavformat-dev                         libswresample-dev                         libavutil-dev                         libfdk-aac-dev                         libfreetype6-dev                         libjsoncpp-dev                         libmagick++-dev                         libopenshot-audio-dev                         libprotobuf-dev                         libqt5svg5-dev                         libswscale-dev                         libunittest++-dev                         libxcursor-dev                         libxinerama-dev                         libxrandr-dev                         libzmq3-dev                         pkg-config                         python3-dev                         protobuf-compiler                         qtbase5-dev                         qtmultimedia5-dev                         swig
+   20  sudo apt-get install openshot-qt                         cmake                         libx11-dev                         libasound2-dev                         libavcodec-dev                         libavdevice-dev                         libavfilter-dev                         libavformat-dev                         libswresample-dev                         libavutil-dev                         libfdk-aac-dev                         libfreetype6-dev                         libjsoncpp-dev                         libmagick++-dev                         libopenshot-audio-dev                         libprotobuf-dev                         libqt5svg5-dev                         libswscale-dev                         libunittest++-dev                         libxcursor-dev                         libxinerama-dev                         libxrandr-dev                         libzmq3-dev                         pkg-config                         python3-dev                         protobuf-compiler                         qtbase5-dev                         qtmultimedia5-dev                         swig
+   21                          
+   22  apt list --installed | grep openshot
+   23  apt list --installed | grep swig
+   24  apt list --installed | grep qtmultimedia5-dev
+   25  cd libopenshot-audio/
+   26  ls
+   27  mkdir build
+   28  cd build/
+   29  cmake ../
+   30  sudo make install
+   31  cd ../../libopenshot
+   32  mkdir build
+   33  cd build/
+   34  cmake ../
+   35  sudo make install
+   36  sudo ldconfig
+   37  cd ../../openshot-qt/
+   38   python3 src/launch.py
+   39  pip install PyQt5
+   40  python -c "from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+   41  pip install PyQtWebEngine
+   42  python -c "from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+   43   python3 src/launch.py
+   44  conda install libgcc-ng libstdcxx-ng
+   45   python3 src/launch.py
+   46  conda deactivate
+   47  cd ../
+   48  python3 -m venv venv
+   49  source venv/bin/activate
+   50  pip install --upgrade pip setuptools wheel
+   51  conda deavtive
+   52  conda deactive
+   53  conda deactivate
+   54  source ~/venvs/openshot/bin/activate
+   55  source venv/bin/activate
+   56  pip install PyQt5 PyQtWebEngine
+   57  conda deactivate
+   58  conda deactivate
+   59  conda deactivate
+   60  conda deactivate
+   61  pip install PyQt5 PyQtWebEngine
+   62  exit
+   63  conda deactive
+   64  conda deactivate
+   65  cd workspace/Openshot/
+   66  ls
+   67  rm -r venv
+   68  python3 -m venv venv
+   69  source venv/bin/activate
+   70  pip list|grep Pyqt
+   71  cd ~/workspace/Openshot/libopenshot-audio
+   72  apt list --installed | grep swig
+   73  rm -rf build
+   74  mkdir build && cd build
+   75  came ../
+   76  cmame ../
+   77  cmake ../
+   78  sudo make install
+   79  echo $DISPLAY
+   80  cd ../../libopenshot
+   81  rm -rf build
+   82  mkdir build && cd build
+   83  sudo rm -rf build
+   84  mkdir build && cd build
+   85  cmake ../
+   86  sudo make install
+   87  python -V
+   88  sudo ldconfig
+   89  cd ../../openshot-qt/
+   90  python src/launch.py 
+   91  pip install PyQt5
+   92  python src/launch.py 
+   93  echo $LD_LIBRARY_PATH
+   94  which python
+   95  # libopenshot-audio
+   96  cd ~/workspace/Openshot/libopenshot-audio
+   97  rm -rf build
+   98  mkdir build && cd build
+   99  cmake ../
+  100  make
+  101  sudo make install
+  102  # libopenshot
+  103  cd ~/workspace/Openshot/libopenshot
+  104  rm -rf build
+  105  mkdir build && cd build
+  106  cmake ../
+  107  make
+  108  sudo make install
+  109  sudo ldconfig
+  110  sudo ldconfig
+  111  cd ../openshot-qt/
+  112  python src/launch.py 
+  113  ldd /usr/local/lib/libopenshot-audio.so.10 | grep libstdc++
+  114  echo $LD_LIBRARY_PATH
+  115  python -c "import _openshot; import os; print(os.path.realpath(_openshot.__file__))"
+  116  pip uninstall openshot
+  117  sudo rm -rf /usr/local/lib/python3.13/site-packages/openshot*
+  118  sudo rm -rf /usr/local/lib/python3.13/site-packages/_openshot*
+  119  cd ~/workspace/Openshot/libopenshot
+  120  rm -rf build
+  121  mkdir build && cd build
+  122  sudo rm -rf build
+  123  mkdir build && cd build
+  124  cmake ../
+  125  sudo make install
+  126  sudo ldconfig
+  127  python -c "import _openshot; import os; print(os.path.realpath(_openshot.__file__))"
+  128  python -c "import site; print(site.getsitepackages())"
+  129  cmake -DPYTHON_EXECUTABLE=$(which python) ../
+  130  sudo make install
+  131  python -c "import site; print(site.getsitepackages())"
+  132  python -c "import _openshot; import os; print(os.path.realpath(_openshot.__file__))"
+  133  ldd $(python -c "import _openshot; import os; print(os.path.realpath(_openshot.__file__))") | grep libstdc++
+  134  ls /opt/conda/bin/../lib/libstdc++.so.6
+  135  history
+  136  deactivate
+  137  conda info --envs
+  138  conda activate openshot
+  139  cd ../../
+  140  cd openshot-qt/
+  141  python3 src/launch.py 
+  142  conda install -c conda-forge libstdcxx-ng
+  143  python3 src/launch.py 
+  144  which python
+  145  conda install zmq
+  146  conda install pyzmq
+  147  python3 src/launch.py 
+  148  conda install requests
+  149  python3 src/launch.py 
+  150  conda install pyqt5 pyqtwebengine
+  151  conda install pyqt=5 pyqtwebengine
+  152  export LD_LIBRARY_PATH=
+  153  python3 src/launch.py 
+  154  pip uninstall pyqt5
+  155  echo $PYTHONPATH
+  156  python3 src/launch.py 
+  157  conda install pyqt=5 pyqtwebengine
+  158  python3 src/launch.py 
+  159  pip install PyQt5
+  160  python3 src/launch.py 
+  161  which python
+  162  python -m site
+  163  python -m pip list | grep PyQt5
+  164  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  165  conda install pyqtwebengine
+  166  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  167  which python
+  168  python -m pip show PyQt5
+  169  echo $LD_LIBRARY_PATH
+  170  conda install libgcc
+  171  conda install --force-reinstall pyqt=5 pyqtwebengine
+  172  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  173  sudo apt-get install libpci3
+  174  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  175  python3 src/launch.py 
+  176  pip list|grep Py
+  177  conda list|grep Py
+  178  conda list|grep py
+  179  pip uninstall PyQt5 PyQtWebEngine PyQt5-sip PyQt5-Qt5 PyQtWebEngine-Qt5
+  180  conda install pyqt=5 pyqtwebengine
+  181  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  182  conda list|grep py
+  183  conda list | grep pyqt
+  184  pip uninstall -y PyQt5 PyQtWebEngine PyQt5-sip pyqt5-qt5 PyQtWebEngine-Qt5
+  185  conda list | grep pyqt
+  186  conda install -y pyqt=5 pyqtwebengine
+  187  conda list | grep pyqt
+  188  python -c "from PyQt5.QtCore import Qt; from PyQt5.QtWebEngineWidgets import QWebEngineView; print('OK')"
+  189  python3 src/launch.py 
+  190  history > ~/workspace/Openshot/openshot_setup_history.txt
