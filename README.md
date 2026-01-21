@@ -73,17 +73,22 @@ conda install soundfile
 ```
 
 
-##現状実装済み機能
-無音区間のカット
-1.対象動画ファイルを「Cut Track」へDrag＆Drop
-![Cut ui](images/silent_ui.png)
-2.待機後、無音区間が黄色いハイライトとして表示
-![Cut](images/silent_cut.png)
+## 現状実装済み機能
+無音区間のカット<br>
+1.対象動画ファイルを「Cut Track」へDrag＆Drop<br>
+<img src="images/silent_ui.png" width="300" alt="Cut UI">
+
+2.待機後、無音区間が黄色いハイライトとして表示<br>
+<img src="images/silent_cut.png" width="300" alt="Cut">
+
 3.「RUN」ボタン押下で要約動画生成
 
-テキストのプレビュー
+テキストのプレビュー<br>
+<img src="images/text_preview.png" width="300" alt="preview">
 
-テキストと動画のシステム側(python)への送信
-1.対象動画ファイルを「Cut Track」、テキストをへCut Track」Drag＆Drop
-2. 「SUMMARY」ボタン押下で作業を行っている区間を表示(現在はダミーデータ)
+テキストと動画のシステム側(python)への送信<br>
+1.対象動画ファイルを「Cut Track」、テキストをへCut Track」Drag＆Drop<br>
+2. 「SUMMARY」ボタン押下で作業を行っている区間を表示(現在はダミーデータ)<br>
+<img src="images/dummy.png" width="300" alt="dummy">
+
 3.「RUN」ボタン押下で要約動画生成
